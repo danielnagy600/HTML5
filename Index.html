@@ -2,9 +2,83 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <!--https://caniuse.com/-->
 </head>
 <body>
+    <!--Navigáció-->
+    <nav>
+        <a href="pages/about.html">About</a>
+        <a href="#drama">Drama</a>
+    </nav>
+    <h1>Movies</h1>
 
+    <!--Első szekció-->
+    <section>
+        <!--Új bejegyzés-->
+        <article>
+            <h1>My favourite movie</h1>
+            <p>The Master</p>
+            <img id="imgMaster"
+                 class="test-images"
+                 src="https://images.justwatch.com/backdrop/10307461/s1440/the-master"
+                 width="500" />
+        </article>
+    </section>
+    <!--Második szekció-->
+    <section id="scienceFiction">
+        <h1>My favourite science fiction</h1>
+        <p>The Lord of The Rings</p>
+        <img src="https://www.tvovermind.com/wp-content/uploads/2018/08/Arwen-Fellowship-of-the-RIng-750x373.jpg"
+             width="500" />/>
+    </section>
+    <!--Harmadik szekció-->
+    <section id="thriller">
+        <h1>My favourite thriller</h1>
+        <p>Se7ven</p>
+        <img src="https://vignette.wikia.nocookie.net/villains/images/4/4a/Kevin_Spacey_John_Doe_Se7en.jpeg/revision/latest?cb=20171230134058"
+             width="500" />/>
+    </section>
+
+    <!--Negyedik szekció-->
+    <section id="drama">
+        <h1>My favourite drama</h1>
+        <p>Forrest Gump</p>
+        <img src="https://img-tv.vl.ru/fhd/d9ee9ec08b4a141225808a6270e06fb019012c.jpg"
+             width="500" />/>
+    </section>
+
+    <!--Ötödik szekció-->
+    <section>
+        <article>
+            <h1>Regisztráció</h1>
+            <p1><strong>Kérjük adja meg az adatait!</strong></p1>
+            <form method="get" action="http://nettuts.hu/post">
+                <!--name=ertek párok-->
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" /><br />
+
+                <label for="password">Password</label>
+                <input name="password" id="password" type="password" /><br />
+
+                <button>Button</button>
+            </form>
+        </article>
+    </section>
+
+
+    <!--Lábléc-->
+    <aside>
+        <h3>Footer </h3>
+    </aside>
+
+    <footer>
+        &copy; Nagy Dániel
+    </footer>
+
+
+    <script src="../js/main.js"></script>
 </body>
+
+
 </html>
