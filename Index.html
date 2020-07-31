@@ -7,16 +7,19 @@
     <!--https://caniuse.com/-->
 </head>
 <body>
-    <!--Navigáció-->
+    <!--Navigation-->
     <nav>
         <a href="pages/about.html">About</a>
         <a href="#drama">Drama</a>
     </nav>
+    <!--Change h1 with JavaScript-->
     <h1>Movies</h1>
+    <!--Use bootrap style-->
+    <button class="btn btn-secondary" onclick=changeH1()>Change h1</button>
 
-    <!--Első szekció-->
+    <!--First section-->
     <section>
-        <!--Új bejegyzés-->
+        <!--New article-->
         <article>
             <h1>My favourite movie</h1>
             <p>The Master</p>
@@ -26,14 +29,14 @@
                  width="500" />
         </article>
     </section>
-    <!--Második szekció-->
+    <!--Second section-->
     <section id="scienceFiction">
         <h1>My favourite science fiction</h1>
         <p>The Lord of The Rings</p>
         <img src="https://www.tvovermind.com/wp-content/uploads/2018/08/Arwen-Fellowship-of-the-RIng-750x373.jpg"
              width="500" />/>
     </section>
-    <!--Harmadik szekció-->
+    <!--Third section-->
     <section id="thriller">
         <h1>My favourite thriller</h1>
         <p>Se7ven</p>
@@ -41,7 +44,7 @@
              width="500" />/>
     </section>
 
-    <!--Negyedik szekció-->
+    <!--quarters section-->
     <section id="drama">
         <h1>My favourite drama</h1>
         <p>Forrest Gump</p>
@@ -49,26 +52,27 @@
              width="500" />/>
     </section>
 
-    <!--Ötödik szekció-->
+    <!--Fifth section-->
     <section>
         <article>
             <h1>Regisztráció</h1>
             <p1><strong>Kérjük adja meg az adatait!</strong></p1>
-            <form method="get" action="http://nettuts.hu/post">
+            <form method="get" action="#">
                 <!--name=ertek párok-->
                 <label for="email">Email</label>
                 <input name="email" id="email" type="email" /><br />
 
                 <label for="password">Password</label>
-                <input name="password" id="password" type="password" /><br />
+                <input class="input-validate" name="password" id="password" type="password" /><br />
 
-                <button>Button</button>
+                <button class="btn btn-secondary">Button</button>
             </form>
         </article>
     </section>
 
 
-    <!--Lábléc-->
+
+    <!--Footer-->
     <aside>
         <h3>Footer </h3>
     </aside>
@@ -77,11 +81,10 @@
         &copy; Nagy Dániel
     </footer>
 
-
-    <script src="../js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 
