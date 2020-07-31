@@ -1,6 +1,4 @@
-﻿body {
-}
-
+﻿
 aside{
     float: left;
 }
@@ -10,5 +8,50 @@ footer{
     left: 0px;
     right: 0px;
     bottom: 0px;
-
 }
+
+/*Own style*/
+.btn-myStyle{
+    color:black;
+    font-size:20px;
+    border-radius:6px;
+    box-shadow: 0 0 4px #808080;
+    transition: all 0.5s;
+}
+
+.btn-myStyle:hover {
+    box-shadow: 0 0 9px #808080;
+}
+
+/*ANIMATION
+@keyframes animationName{
+    0%  {opacity: 0; left: -100%;}
+    25% {opacity: 0; left: -75%;}
+    50% {opacity: 0; left: -50%;}
+    75% {opacity: 0.25; left: -25%;}
+    100% {opacity: 1; left: 0%;}
+}*/
+
+/*
+@media screen and (max-width: 550px){
+    ...
+}*/
+
+/*
+    CSS Selectors:
+        document.querySelector("h1");
+        document.querySelectorAll("h1");
+        
+        Element selector    h1{}
+        Class selector      .class
+        #id selector        #id
+        ...
+        ~, $, pseudo selector pl: a:hover
+            
+        
+        Megjegyzés: Szóköz esetén p .sub-lead (p tagon belűl xy osztályt keres)
+        Attribútum selector: "data-toggle"='collapse'
+        DOM selector document.querySelector(#main ul:first-child); Sokkal gyorsabb mint jQuery $(#main ul:first-child).hide();
+        
+        valami.classList.contains("keresett-osztaly");
+*/
