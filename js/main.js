@@ -5,6 +5,33 @@ function changeH1(){
     document.querySelector("h1").innerHTML = "I see you";
 }
 
+//--------DRAG AND DROP-------
+function allowDrop(ev) {
+    ev.target.style.border = "dashed 3px #e0e0e0";
+    ev.preventDefault();
+}
+
+function dropLeaved(ev) {
+    ev.preventDefault();
+    ev.target.style.border = "solid 1px black";
+}
+
+//Start the element drag
+function drag(ev) {
+    ev.dataTransfer.setData("id",ev.target.id);
+
+}
+
+//Drop the element
+function drop(ev) {
+    ev.preventDefault();
+    var id = ev.dataTransfer.getData("id");
+    ev.target.appendChild(document.querySelector("#"+id));
+}
+
+
+
+
 /*--------CHANGE STYLE--------
 function changeStyle() {
     document.querySelector("img").style.width = "50px";

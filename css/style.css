@@ -23,6 +23,30 @@ footer{
     box-shadow: 0 0 9px #808080;
 }
 
+.drop-container{
+    background-color:ghostwhite;
+    box-shadow: 0 0 5px;
+}
+
+.drop-container div{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    border: solid 1px #808080;
+    background-color:azure;
+}
+
+
+/*CANVAS STYLE
+    #myCanvas{
+    width:200px;
+    height:100px;
+    margin:20px auto;
+    border: solid 1px black;
+}
+*/
+
 /*ANIMATION
 @keyframes animationName{
     0%  {opacity: 0; left: -100%;}

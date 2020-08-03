@@ -21,9 +21,9 @@
             Button
         </button>
     </div>
-   
 
-    
+
+
 
     <!--First section-->
     <section>
@@ -77,6 +77,32 @@
             </form>
         </article>
     </section>
+
+    <!--Canvas-->
+    <!--<canvas id="myCanvas">
+    </canvas>-->
+
+    <!--SVG-->
+    <!--<svg >
+    </svg>-->
+    <h3>Drag and Drop example</h3>
+    <!--Drag and Drop-->
+    <div class="container drop-container">
+        <div class="source">
+            <img 
+                 id="imgd"
+                 src="https://www.w3schools.com/html/img_w3slogo.gif"
+                 draggable="true"
+                 ondragstart="drag(event)"/>
+        </div>
+
+        <div class="target"
+             ondragover="allowDrop(event)"
+             ondragleave="dropLeaved(event)"
+             ondrop="drop(evnet)">
+                &nbsp;
+        </div>
+    </div>
 
     <!--Footer-->
     <aside>
